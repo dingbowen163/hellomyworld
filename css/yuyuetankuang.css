@@ -1,0 +1,74 @@
+/*-----------------弹出框------------*/
+
+.xk_pull {
+	width: 11.725rem;
+	height: 8.125rem;
+	background: url(../images/yuyuekuang.png) repeat-x #f8f7f5;
+	border-radius: 0.2rem;
+	font-family: "Helvetica Neue", Helvetica, Arial, 黑体!important;
+	padding-bottom: 0.5rem;
+	}
+.xk_pull ul{
+	height: 8.125rem;
+	margin-left:0.7rem;
+	margin-right:0.7rem;
+	
+}
+.xk_pull .xk_yuyue{
+	font-size: 0.9rem;
+	padding-top: 0.625rem;
+	padding-bottom: 0.4rem;
+	text-align: center;
+	color: #000000;
+	border-bottom: 0.025rem solid #ece5e5;
+}
+.xk_pull .xk_day{
+	margin-top: 0.5rem;
+	font-size: 0.65rem;
+	margin-left: 0.45rem;
+	color: #70706f;
+}
+.xk_pull .xk_course{
+	margin-top: 0.55rem;
+	font-size: 0.65rem;
+	margin-left: 0.45rem;
+	color: #70706f;
+}
+.xk_pull ul li.xk_red{
+	margin-left: 0.45rem;
+	font-size: 0.425rem;
+	margin-top: 0.325rem;
+	color: #fd706f;
+}
+.xk_pull a{
+	display: inline-block;
+	width: 4.2rem;
+	height: 1.35rem;
+	border-radius: 0.175rem;
+	line-height: 1.35rem;
+	text-align: center;
+	color: #FFFFFF;
+}
+.xk_pull .xk_anniu2{
+	margin-top: 0.5rem;
+	margin-bottom:0.55rem;
+}
+.xk_pull ul li .xk_btn1{
+	background-color: #3BD0B9;
+	margin-left: 0.15rem;
+	font-size: 0.6rem;
+}
+.xk_pull ul li .xk_btn2{
+	background-color: #3BD0B9;
+	margin-left: 1.65rem;
+	font-size: 0.6rem;
+}
+
+
+
+
+
+
+
+
+

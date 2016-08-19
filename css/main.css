@@ -1,0 +1,190 @@
+.dbw-F-L{
+	float:left;
+}
+.dbw-F-R{
+	float: right;
+}
+/*header*/
+.dbw-headerCon{
+	background: #e35f14;
+	height:2.2rem;
+}
+.dbw-headerTitle{
+	color:#fff;
+	font-size:0.65rem;
+	line-height:2.2rem;
+}
+.dbw-headerCon .dbw-headerBackIcon{
+	color:#fff;
+	font-size:1rem; 
+	padding-top:0.65rem;
+}
+.dbw-headerTwin{
+	height:2.2rem;
+}
+/*teacherScore*/
+.dbw-teacherScore{
+	margin-top: 0.5rem;
+	height:8.225rem;
+	background: #ffc000;
+	text-align: center;
+}
+.dbw-scoreCon{
+	font-weight: bold;
+	color:#fff;
+	font-size:3.85rem;
+	line-height: 8.225rem;
+}
+/*commentsTag*/
+.dbw-commentsTag{
+
+	border-bottom:1px solid #f6f6f6;
+	background:#fff;
+	padding-left:0.55rem;
+	padding-top:0.625rem;
+}
+.dbw-commentsTagCon li{
+	width: 21.5%;
+	height:1.075rem;
+	line-height: 0.8rem;
+	float: left;
+	border:0.025rem solid #f06c08;
+	background:#f06c08;
+	border-radius: 0.175rem;
+	text-align: center;
+	margin-left:1.25%;
+	margin-right:1.25%;
+	margin-bottom:0.325rem;
+}
+.dbw-commentsTagCon li span{
+	color:#fff;
+	font-size:0.45rem;
+}
+/*commentsMain*/
+.dbw-commentsMain{
+	
+	margin-top:0.15rem;
+	border-top:0.025rem solid #f6f6f6;
+	background:#fff;
+}
+.dbw-commentsSort{
+	height:1.625rem;
+	border-bottom:0.05rem solid #d2d2d2;
+	padding-top:0.275rem;
+}
+.dbw-commentsSort ul {
+	height:1.375rem;
+	display:-webkit-box;
+}
+.dbw-commentsSort ul li{
+	-webkit-box-flex:1;
+	height:100%;
+	text-align: center;
+	margin-left:-1px;
+}
+.dbw-B-R-1{
+	border-right: 0.025rem solid #ccc;
+}
+.dbw-B-L-1{
+	border-left: 0.025rem solid #ccc;
+}
+.dbw-commentsSort ul li span{
+	font-size:0.65rem;	
+	line-height:1.375rem;
+	color:#a3a3a3;
+}
+.dbw-commentsSort .dbw-active span{
+	color:#5AC5FB;
+}
+.dbw-M-R-75{
+	margin-right:0.75rem;
+}
+/*CommentMenu*/
+.dbw-commentsContainer .dbw-active{
+	display: block;
+}
+.dbw-CommentMenu{
+	width:15.175rem;
+	margin-left:0.4rem;
+	display: none;
+}
+.dbw-CommentCon{
+	padding-bottom: 0.45rem;;
+	overflow: hidden;
+	border-bottom:0.025rem solid #CCCCCC;
+}
+.dbw-CommentCon span{
+	display: inline-block;
+}
+.dbw-stuName span{
+	margin-top:0.6rem;
+	font-size:0.55rem;
+	color:#585858;
+	float: left;
+}
+.dbw-commentTime span{
+	margin-top:0.65rem;
+	font-size:0.45rem;
+	color:#a3a3a3;
+	float: left;
+}
+.dbw-commentPsg{
+	line-height: 0.725rem;
+	font-size:0.55rem;
+	color:#8d8d8d;
+	margin-top:0.225rem;
+	padding-left:0.05rem;
+	padding-right:0.05rem;
+}
+.dbw-raty{
+	display: inline-block;
+	margin-left:0.725rem;
+	margin-top:0.25rem;
+	width:4rem!important;
+	}
+.dbw-raty img{
+	width:0.55rem;
+	margin-left:-0.175rem;
+}
+
+
+.dbw-stuNameCon{
+	display: inline-block;
+}
+.dbw-stuNameName{
+	width:1.8rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,105 @@
+﻿/*内容*/
+section{
+    width: 100%;
+}
+.bxk_classModal{
+    margin: 0.5rem;
+    border: 1px solid #e3e3e3;
+    border-radius: 0.5rem;
+}
+.bxk_classImg{
+    width: 14.9rem;
+    height: 6.6rem;
+}
+.dbw-classImg{
+    position: relative;
+}
+.dbw-posIcon{
+    width:4.95rem;
+    height:1.25rem;
+    background: url(../images/dbw-posIcon.png) no-repeat;
+    background-size: 4.95rem 1.25rem;
+    position: absolute;
+    top:0.4rem;
+    right:-0.25rem;
+    color:#fff;
+    font-size: 0.55rem;
+    line-height: 1.25rem;
+    text-align: center;
+}
+.bxk_classImg img{
+    width: 100%;
+}
+.bxk_classFont{
+    width: 15rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    font-size: 0.75rem;
+    color: #ff8600;
+    position: relative;
+}
+.bxk_fonttime{
+    text-indent: 0.5rem;
+    font-size: 0.65rem;
+}
+.bxk_closed{
+    position: absolute;
+    top:0.5rem;
+    right:0.575rem;
+    display: block;
+    width: 3.9rem;
+    height: 1.375rem;
+    text-align: center;
+    line-height: 1.375rem;
+    background: #ff8600;
+    color: #fff;
+    border-radius: 0.2rem;
+}
+.NO .bxk_classFont{
+    color: #b6b6b6;
+}
+.xk_pull2{
+    width: 11.725rem;
+    height: 6.7rem;
+    background: url("../images/yuyuekuang.png") no-repeat top;
+    background-size: 11.75rem;
+    border-top:none;
+}
+.xk_pull2 .xk_yesorno{
+    font-size: 0.85rem;
+    text-align: center;
+    padding-top: 2.025rem;
+    padding-bottom: 1.775rem;
+}
+.xk_pull2 ul li a{
+    display: inline-block;
+    width: 4.2rem;
+    height: 1.325rem;
+    background-color: #3bd0b9;
+    border-radius: 0.25rem;
+    text-align: center;
+    font-size: 0.6rem;
+    line-height: 1.325rem;
+    color: #ffffff;
+}
+.xk_pull2 .xk_no{
+    margin-left: 0.85rem;
+}
+.xk_pull2 .xk_yes{
+    margin-left: 1.65rem;
+}
+/*没有老师*/
+.noyuyue img{
+    width: 5.25rem;
+    margin-top: 1.9rem;
+    margin-left: 5.35rem;
+    margin-bottom: 0.75rem;
+}
+.noyuyue p{
+    font-size: 0.768rem;
+    text-align: center;
+    line-height: 0.925rem;
+}
+
+
+

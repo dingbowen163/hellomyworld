@@ -1,0 +1,84 @@
+﻿body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,figcaption,figure,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font-family: "Helvetica Neue", Helvetica, Arial, 黑体}
+h1{font-size:18px;font-weight:normal}
+h2{font-size:16px;font-weight:normal}
+h3{font-size:14px;font-weight:normal}
+h4,h5,h6{font-size:100%;font-weight:normal}
+address,cite,dfn,em,var{font-style:normal}
+code,kbd,pre,samp,tt{font-family:"Courier New",Courier,monospace}
+small{font-size:12px}
+ul,ol,li{list-style:none}
+a{text-decoration:none}
+abbr[title],acronym[title]{border-bottom:1px dotted;cursor:help}
+q:before,q:after{content:''}
+legend{color:#000}
+fieldset,img{border:0}
+table{border-collapse:collapse;border-spacing:0}
+hr{border:0;height:1px}
+body{
+    background: #F6F6F6;
+}
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-touch-callout:none;  -webkit-user-select:none;  -khtml-user-select:none;  -moz-user-select:none;  -ms-user-select:none;  user-select:none;}
+.clearfix:after{display:block;clear:both;content:'';}
+.clearfix{zoom:1;}
+textarea,a,input{outline: none;}
+/*头部*/
+header{
+    width: 100%;
+    height: 2.2rem;
+    background: #e35f14;
+    position: fixed;
+    z-index:999;
+}
+.bxk_header{
+    text-align: center;
+    color: #fff;
+    line-height: 2.2rem;
+}
+.mui-title{
+    font-size: 0.85rem;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    color: #FFFFFF;
+}
+.bxk_clock{
+    width: 2.2rem;
+    height: 2.2rem;
+    display: block;
+    background: url("../images/clock.png") no-repeat center;
+    background-size: 0.975rem 0.975rem;
+    position: absolute;
+    right:0;
+    top:0;
+}
+
+.bxk_back{
+    width: 2.2rem;
+    height: 2.2rem;
+    display: block;
+    position: absolute;
+	top: 0;
+    background: url("../images/back.png") no-repeat center;
+    background-size: 0.55rem 0.975rem;
+	z-index: 9999999;
+}
+.xk_style{
+    width:100%;
+    height: 0.5rem;
+    background-color: #e35f14;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+}
+@media screen and (max-width: 430px){
+    header{
+        top: 0.5rem;
+    }            
+}
+@media screen and (min-width: 431px){
+    header{
+        top: 0.48rem;
+    }
+}
+
+

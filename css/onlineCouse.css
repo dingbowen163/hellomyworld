@@ -1,0 +1,54 @@
+﻿
+/*------------- E 默认必须样式  -------------*/
+.xk_onlineCouse ul{
+    overflow: hidden;
+}
+.xk_onlineCouse .xk_jQsmall,a{
+    color: #2f2f2f;
+}
+.xk_onlineCouse .xk_panel{
+    width: 16rem;
+    height: 4.9rem;
+    border-bottom: 1px solid #DDDDDD;
+}
+.xk_onlineCouse .xk_jQsmall{
+    margin-top: 0.8rem;
+    margin-left: 0.55rem;
+    margin-right: 0.625rem;
+    width: 6.475rem;
+}
+.xk_onlineCouse .xk_panel ul li div img{
+    display: block;
+    max-width: 6.475rem;
+    max-height: 3.65rem;
+    margin:0 auto;
+}
+.xk_onlineCouse .xk_cook1{
+    margin-top: 1.2rem;
+    margin-bottom: 0.15rem;
+    font-size: 0.75rem;
+    height:0.8rem;
+}
+.xk_onlineCouse .xk_cook2{
+    line-height: 0.95rem;
+    font-size: 0.58rem;
+    color: #666666;
+}
+.xk_onlineCouse .xk_cook2 a{
+    color: #000;
+}
+.xk_wodekebiao img{
+    position: fixed;
+    width:4.425rem;
+    left:11.575rem;
+    top:2.5rem;
+    z-index:995;
+}
+.dbw-allOnlineCourse{
+    padding-top:0.55rem;
+    text-align: center;
+}
+.dbw-allOnlineCourse a{
+    color:#e36010;
+    font-size: 0.6rem;
+}

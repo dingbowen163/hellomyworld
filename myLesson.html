@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的课表</title>
+    <meta name="viewport"
+          content="width=device-width,height=device-height, minimum-scale=1.0, maximum-scale=1.0,initial-scale=1, user-scalable=no"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/> <!--iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览；-->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/> <!--iphone中safari顶端的状态条的样式；-->
+    <meta content="telephone=no" name="format-detection"/> <!--忽略将页面中的数字识别为电话号码 -->
+    <meta content="email=no" name="format-detection"/> <!--禁用安卓邮箱自动识别功能-->
+
+    <script src="js/MyRespond.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mylesson.css">
+    <link rel="stylesheet" href="css/scrollbarLs.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.lazyload.js"></script>
+</head>
+<body>
+<div class="xk_style"></div>
+<header class="bxk_header">
+    <a class="bxk_back" href="javascript:;" id="myLessonBack"></a>
+    <h1 class="mui-title">我的课表</h1>
+    <!--<a href="javascript:;" class="bxk_clock">-->
+    <!--&lt;!&ndash;消息数&ndash;&gt;-->
+    <!--<span class="mui-badge mui-badge-primary">90+</span>-->
+    <!--</a>-->
+</header>
+<div id="wrapper">
+    <div id="scroller">
+        <section id="myLessonbox">
+
+        </section>
+        <div id="pullUp">
+            <span class="pullUpIcon"></span>
+            <span class="pullUpLabel">上拉加载更多...</span>
+        </div>
+    </div>
+</div>
+
+<script src="layer.m/layer.m.js"></script>
+<script src="js/touch-0.2.14.min.js"></script>
+
+<script src="js/myLesson.js"></script>
+<script src="js/iscroll.js"></script>
+<script>
+    //    importScript(["js/myLesson.js"]);
+    //		判断平台
+    var u = navigator.userAgent;
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    // IOS
+    //    if (isiOS) {
+    //        importScript(["js/ios.js"]);
+    //    }
+    //
+    //    if (isAndroid) {
+    //        importScript(["js/android.js"]);
+    //    }
+    //    动态引入脚本库
+    function importScript(scriptUrls) {
+        for (var i = 0, l = scriptUrls.length; i < l; i++) {
+            var s = document.createElement('script');
+            s.src = scriptUrls[i] + "?version=" + Math.random();
+            document.getElementsByTagName('body')[0].appendChild(s);
+        }
+    }
+</script>
+</body>
+</html>

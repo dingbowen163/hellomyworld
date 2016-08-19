@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,height=device-height, minimum-scale=1.0, maximum-scale=1.0,initial-scale=1, user-scalable=no"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/> <!--iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览；-->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/> <!--iphone中safari顶端的状态条的样式；-->
+    <meta content="telephone=no" name="format-detection"/> <!--忽略将页面中的数字识别为电话号码 -->
+    <meta content="email=no" name="format-detection"/> <!--禁用安卓邮箱自动识别功能-->
+    <title></title>
+    <link rel="stylesheet" href="css/mui.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/yuyue.css"/>
+    <link rel="stylesheet" type="text/css" href="css/yuyuetankuang.css"/>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!--手机日期-->
+    <script src="js/mobiscroll.core-2.5.2.js" type="text/javascript"></script>
+    <script src="js/mobiscroll.core-2.5.2-zh.js" type="text/javascript"></script>
+
+    <link href="css/mobiscroll.core-2.5.2.css" rel="stylesheet" type="text/css"/>
+    <link href="css/mobiscroll.animation-2.5.2.css" rel="stylesheet" type="text/css"/>
+    <script src="js/mobiscroll.datetime-2.5.1.js" type="text/javascript"></script>
+    <script src="js/mobiscroll.datetime-2.5.1-zh.js" type="text/javascript"></script>
+
+    <!-- S 可根据自己喜好引入样式风格文件 -->
+    <script src="js/mobiscroll.android-ics-2.5.2.js" type="text/javascript"></script>
+    <link href="css/mobiscroll.android-ics-2.5.2.css" rel="stylesheet" type="text/css"/>
+    <script src="js/MyRespond.js"></script>
+    <script src="layer.m/layer.m.js"></script>
+</head>
+<body>
+<div class="xk_style"></div>
+<header class="bxk_header">
+    <a class="bxk_back" href="javascript:;" id="back"></a>
+    <h1 class="mui-title">预约</h1>
+    <a href="javascript:;" class="bxk_clock" id="clock"></a>
+</header>
+<div class="xk_content">
+    <ul>
+        <li class="xk_one1">
+            <ul class="xk_attend">
+                <li class="xk_left xk_time">上课时间 :</li>
+                <li class="xk_left xk_today"><input type="text" name="VisitTime" id="appDateTime"
+                                                     class="select_w" value="请选择预约时间"/></li>
+            </ul>
+        </li>
+        <li class="xk_one2">
+            <ul class="xk_condition">
+                <li class="xk_left xk_shaixuan">筛选条件 :</li>
+                <li class="xk_left xk_tiaojian">
+                    <a href="javascript:;" class="xk_man nav" value="1">男</a><a href="javascript:;" class="xk_girl nav" value="0">女</a><a href="javascript:;" class="xk_unlimited nav" value="-1">不限男女</a><br/><a href="javascript:;" class="xk_china" value="0" id="chinesebtn">会说中文</a><a
+                        href="javascript:;" class="xk_teacherx" value="" id="collectbtn">收藏的老师</a>
+                </li>
+            </ul>
+        </li>
+        <li class="xk_one3">
+            <ul class="xk_determine">
+                <li><a href="javascript:;" class="xk_confirm" id="searchBtn">确认</a></li>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <li class="xk_chunk"></li>
+    </ul>
+</div>
+
+<div class="xk_shaixuankuang">
+    <div class="xk_left xk_timeshuju">上课时间 : <i id="selectDate"></i><img src="images/xjt.png" alt=""/></div>
+    <div class="xk_right xk_shaixuan2"><a href="javascript:;" class="xk_shaxuananniu" id="chage">筛选</a></div>
+</div>
+
+<div class="xk_content2" id="noTeacher">
+    <ul id="teahcerbox">
+
+    </ul>
+</div>
+<!--<div class="noyuyue">-->
+<!--<img src="images/no.png" alt=""/>-->
+<!--<p>目前没有合适的老师</p>-->
+<!--<p>主人要不要换一个时间哦</p>-->
+<!--</div>-->
+<!--<div class="xk_pull" id="order">-->
+<!--<ul>-->
+<!--<li class="xk_yuyue">预约</li>-->
+<!--<li class="xk_day">时间:<span class="xk_shijian">1月20日（星期三）8:00</span></li>-->
+<!--<li class="xk_course">课程:<span>青少年新概念英语</span></li>-->
+<!--<li class="xk_red">课程俩小时之内不能取消预约哦~</li>-->
+<!--<li class="xk_anniu2">-->
+<!--<a href="" class="xk_btn1">取消</a><a href="" class="xk_btn2">确定</a>-->
+<!--</li>-->
+<!--</ul>-->
+<!--</div>-->
+<script src="js/touch-0.2.14.min.js"></script>
+<script src="js/chageTeacher.js"></script>
+
+
+<script>
+    //		判断平台
+    var u = navigator.userAgent;
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    // IOS
+//    if (isiOS) {
+//        importScript(["js/ios.js"]);
+//    }
+//
+//    if (isAndroid) {
+//        importScript(["js/android.js"]);
+//    }
+    //    动态引入脚本库
+    function importScript(scriptUrls) {
+        for (var i = 0, l = scriptUrls.length; i < l; i++) {
+            var s = document.createElement('script');
+            s.src = scriptUrls[i]+"?version="+Math.random();
+            document.getElementsByTagName('head')[0].appendChild(s);
+        }
+    }
+</script>
+</body>
+</html>

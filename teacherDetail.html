@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,height=device-height, minimum-scale=1.0, maximum-scale=1.0,initial-scale=1, user-scalable=no"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/> <!--iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览；-->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/> <!--iphone中safari顶端的状态条的样式；-->
+    <meta content="telephone=no" name="format-detection"/> <!--忽略将页面中的数字识别为电话号码 -->
+    <meta content="email=no" name="format-detection"/> <!--禁用安卓邮箱自动识别功能-->
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/teacherDetail.css"/>
+    <link rel="stylesheet" type="text/css" href="css/yuyuetankuang.css"/>
+    <link rel="stylesheet" href="css/loading.css">
+    <script src="js/MyRespond.js"></script>
+    <script src="js/if.js"></script>
+    <title>教师详情</title>
+</head>
+<body>
+<!--加载loading----gif-->
+<div id="loading">
+    <div class="spinner">
+        <div class="spinner-container container1">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+        <div class="spinner-container container2">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+        <div class="spinner-container container3">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+    </div>
+</div>
+<div class="xk_style"></div>
+<header class="bxk_header">
+    <a class="bxk_back" href="javascript:;" id="back"></a>
+    <h1 class="mui-title">教师详情</h1>
+    <a href="javascript:;" class="bxk_clock" id="clock"></a>
+</header>
+<section class="dbw-headerTwin"></section>
+<div class="dbw-mianCon">
+    <section class="dbw-teacherFile">
+        <section class="dbw-teacherFile-t">
+            <div class="dbw-teacherFileCon">
+                <ul class="clearfix dbw-teacherFileContainer">
+                    <li class="dbw-F-L">
+									<span class="dbw-selfile">
+										<img src="images/dbw-selfile.jpg" alt="teacher-selfile" id="teacherImg"/>
+									</span>
+                    </li>
+                    <li class="dbw-F-L dbw-teacherNameCon">
+                        <div class="clearfix">
+                            <span class="dbw-teacherName" id="teacherName">Tyler</span>
+                            <div class="dbw-teacherRate" id="pfbtn">
+                                <span id="penfengPag"></span>
+                                <span>评价</span>
+                            </div>
+                        </div>
+                        <div class="dbw-teacherInfo">
+                            <span>性别：</span><span id="teaNav"></span><span class="dbw-teacherAge">年龄：</span><span id="tAge"></span>
+                        </div>
+                    </li>
+                    <li class="dbw-F-R dbw-teacherNum" style="color: #ff8400">
+                        <span class="dbw-bigNum" id="firstNum"></span>.<span class="dbw-smaNum" id="nextNum"></span>
+                    </li>
+                </ul>
+                <section class="dbw-commentsTag">
+                    <nav>
+                        <ul class="dbw-commentsTagCon clearfix" id="tahbox">
+                            <li class="dbw-notComment"><span class="tagName">发音标准</span></li>
+                            <li class="dbw-notComment"><span class="tagName">颜值高</span></li>
+                            <li class="dbw-notComment"><span class="tagName">有耐心</span></li>
+                            <li class="dbw-notComment"><span class="tagName">准备充分</span></li>
+                            <li class="dbw-notComment"><span class="tagName">声音好听</span></li>
+                            <li class="dbw-notComment"><span class="tagName">中文流利</span></li>
+                            <li class="dbw-notComment"><span class="tagName">热情</span></li>
+                            <li class="dbw-notComment"><span class="tagName">有趣</span></li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </section>
+        <section class="dbw-teacherFile-b">
+            <p class="dbw-commentPsg" id="description">
+                Hi,大家好，我是mark，老师教的很认真，我很喜欢。老师声音好听，我很喜欢。老师长得漂亮，我特别喜欢。Hi,大家好，我是mark，老师教的很认真，我很喜欢。老师声音好听，我很喜欢。老师长得漂亮，我特别喜欢。Hi,大家好，我是mark，老师教的很认真，我很喜欢。老师声音好听，我很喜欢。老师长得漂亮，我特别喜欢。Hi,大家好，我是mark，老师教的很认真，我很喜欢。老师声音好听，我很喜欢。老师长得漂亮，我特别喜欢。Hi,大家好，我是mark，老师教的很认真，我很喜欢。老师声音好听，我很喜欢。老师长得漂亮，我特别喜欢。Hi,大家好，我是mark，老师教的很认真，我很喜欢。老师声音好听，我很喜欢。老师长得漂亮，我特别喜欢。Hi,大家好，我是mark，老师教的很认真，我很喜欢。老师声音好听，我很喜欢。老师长得漂亮，我特别喜欢。Hi,大家好，我是mark，老师教的很认真，我很喜欢。老师声音好听，我很喜欢。老师长得漂亮，我特别喜欢。Hi,大家好，我是mark，老师教的很认真，我很喜欢。老师声音好听，我很喜欢。老师长得漂亮，我特别喜欢。</p>
+            <p class="dbw-backIcon">
+                <i></i>
+            </p>
+        </section>
+    </section>
+    <div class="bxk_timebox" id="timebox_Wrapper">
+        <section class="dbw-reserveCLD ">
+            <section class="dbw-CLDWraper dbw-pinned">
+                <nav class="dbw-CLDDateCon">
+                    <ul class="clearfix" id="timeFix">
+                        <li>
+                            <p class="dbw-date">15</p>
+                            <p class="dbw-day">今天</p>
+                        </li>
+                        <li>
+                            <p class="dbw-date">16</p>
+                            <p class="dbw-day">周三</p>
+                        </li>
+                        <li>
+                            <p class="dbw-date">17</p>
+                            <p class="dbw-day">周四</p>
+                        </li>
+                        <li>
+                            <p class="dbw-date">18</p>
+                            <p class="dbw-day">周五</p>
+                        </li>
+                        <li class="dbw-rightPos">
+                            <p class="dbw-date">19</p>
+                            <p class="dbw-day">周六</p>
+                            <i class="dbw-nextPageIcon"></i>
+                        </li>
+
+                        <li>
+                            <p class="dbw-date">20</p>
+                            <p class="dbw-day">周日</p>
+                        </li>
+                        <li>
+                            <p class="dbw-date">21</p>
+                            <p class="dbw-day">周一</p>
+                        </li>
+                        <li>
+                            <p class="dbw-date">22</p>
+                            <p class="dbw-day">周二</p>
+                        </li>
+                        <li>
+                            <p class="dbw-date">23</p>
+                            <p class="dbw-day">周三</p>
+                        </li>
+                        <li>
+                            <p class="dbw-date">24</p>
+                            <p class="dbw-day">周四</p>
+                        </li>
+                        <li>
+                            <p class="dbw-date">24</p>
+                            <p class="dbw-day">周四</p>
+                        </li>
+                        <li>
+                            <p class="dbw-date">24</p>
+                            <p class="dbw-day">周四</p>
+                        </li>
+                        <li>
+                            <p class="dbw-date">24</p>
+                            <p class="dbw-day">周四</p>
+                        </li>
+                        <li>
+                            <p class="dbw-date">24</p>
+                            <p class="dbw-day">周四</p>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="dbw-CLDDateConTwin"></div>
+            </section>
+            <!---->
+            <section class="clearfix dbw-timeCon" id="times">
+
+            </section>
+        </section>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="layer.m/layer.m.js"></script>
+<script src="js/touch-0.2.14.min.js"></script>
+<script src="js/teacherDetail.js"></script>
+
+<script>
+    //		判断平台
+    var u = navigator.userAgent;
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    // IOS
+//    if (isiOS) {
+//        importScript(["js/ios.js"]);
+//    }
+//
+//    if (isAndroid) {
+//        importScript(["js/android.js"]);
+//    }
+    //    动态引入脚本库
+    function importScript(scriptUrls) {
+        for (var i = 0, l = scriptUrls.length; i < l; i++) {
+            var s = document.createElement('script');
+            s.src = scriptUrls[i]+"?version="+Math.random();
+            document.getElementsByTagName('head')[0].appendChild(s);
+        }
+    }
+
+</script>
+
+</body>
+</html>

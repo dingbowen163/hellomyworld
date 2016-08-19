@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,height=device-height, minimum-scale=1.0, maximum-scale=1.0,initial-scale=1, user-scalable=no"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/> <!--iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览；-->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/> <!--iphone中safari顶端的状态条的样式；-->
+    <meta content="telephone=no" name="format-detection"/> <!--忽略将页面中的数字识别为电话号码 -->
+    <meta content="email=no" name="format-detection"/> <!--禁用安卓邮箱自动识别功能-->
+    <title>学生评价</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <script src="js/MyRespond.js"></script>
+
+
+</head>
+<body>
+<div class="xk_style"></div>
+<header class="bxk_header">
+    <a class="bxk_back" href="javascript:;" id="backTeacher"></a>
+    <h1 class="mui-title">学生评价</h1>
+    <a href="javascript:;" class="bxk_clock" id="clock"></a>
+</header>
+
+<div id="wrapper">
+    <div id="scroller">
+            <!-- <section class="dbw-headerTwin"></section> -->
+            <section class="dbw-teacherScore">
+                <p class="dbw-scoreCon" id="teacherNum"></p>
+            </section>
+            <section class="dbw-commentsTag">
+                <nav>
+                    <ul class="dbw-commentsTagCon clearfix" id="tagBox">
+                        <!--<li><span id="tagName">发音标准</span><span id="tagNum">(100)</span></li>-->
+                    </ul>
+                </nav>
+            </section>
+            <section class="dbw-commentsMain">
+                <nav class="dbw-commentsSort">
+                    <ul class="clearfix">
+                        <li class="dbw-active dbw-B-R-1">
+                            <span class="dbw-M-R-75">好评</span><span>
+                        (
+                        <label id="goodPJ"></label>
+                        )
+                    </span>
+                        </li>
+                        <li>
+                            <span class="dbw-M-R-75">差评</span><span>
+                        (
+                        <label id="differencePJ"></label>
+                        )
+                    </span>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="dbw-commentsContainer">
+
+                    <!-- 好评-->
+                    <ul class="dbw-CommentMenu dbw-active" id="TeacherEvaluate">
+
+                    </ul>
+
+
+                    <!-- 差评-->
+
+                    <ul class="dbw-CommentMenu" id="TeacherEvaluateC">
+
+                    </ul>
+                </div>
+
+            </section>
+        <div id="pullUp">
+            <span class="pullUpIcon"></span>
+            <span class="pullUpLabel">上拉加载更多...</span>
+        </div>
+        </div>
+
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.raty.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/touch-0.2.14.min.js"></script>
+<script src="js/comment.js"></script>
+<script type="text/javascript" charset="UTF-8">
+
+    //        $('.dbw-raty').raty({
+    //            score: function () {
+    //                return $(this).attr('data-score');
+    //            },
+    //            path: 'images',
+    //            starHalf: 'star-half-big.png',
+    //            starOff: 'star-off.png',
+    //            starOn: 'star-on-big.png',
+    //            halfShow: true,
+    //            half: true
+    //        });
+    $('.dbw-commentsSort li').click(function () {
+        $('.dbw-commentsSort li').removeClass('dbw-active');
+        $(this).addClass('dbw-active');
+        var index = $(this).index();
+        $('.dbw-CommentMenu').removeClass('dbw-active');
+        $('.dbw-CommentMenu').eq(index).addClass('dbw-active');
+    });
+</script>
+</body>
+</html>

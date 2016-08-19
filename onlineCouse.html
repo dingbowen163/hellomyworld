@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,height=device-height, minimum-scale=1.0, maximum-scale=1.0,initial-scale=1, user-scalable=no"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/> <!--iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览；-->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/> <!--iphone中safari顶端的状态条的样式；-->
+    <meta content="telephone=no" name="format-detection"/> <!--忽略将页面中的数字识别为电话号码 -->
+    <meta content="email=no" name="format-detection"/> <!--禁用安卓邮箱自动识别功能-->
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/onlineCouse.css"/>
+    <link rel="stylesheet" type="text/css" href="css/yuyue.css"/>
+
+    <script src="js/MyRespond.js"></script>
+    <!--<script type="application/javascript" src="js/iscroll.js"></script>-->
+
+
+</head>
+<body>
+<div class="xk_wodekebiao">
+    <img src="images/wodekebiao.png" alt="" id="myLessonBtbn">
+</div>
+<div class="xk_onlineCouse">
+    <ul id="panelbox">
+
+    </ul>
+    <div class="dbw-allOnlineCourse"><a href="javascript:;">全部课程列表</a></div>
+</div>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.lazyload.js"></script>
+<!--<script type="application/javascript" src="js/iscroll.js?v="></script>-->
+<script src="layer.m/layer.m.js"></script>
+<script src="js/online.js"></script>
+
+<script>
+//    importScript(["js/online.js"]);
+    //		判断平台
+    var u = navigator.userAgent;
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    // IOS
+   // if (isiOS) {
+   //     importScript(["js/ios.js"]);
+   // }
+
+   // if (isAndroid) {
+   //     importScript(["js/android.js"]);
+   // }
+
+   //    动态引入脚本库
+   function importScript(scriptUrls) {
+       for (var i = 0, l = scriptUrls.length; i < l; i++) {
+           var s = document.createElement('script');
+           s.src = scriptUrls[i]+"?version="+Math.random();
+           document.getElementsByTagName('body')[0].appendChild(s);
+       }
+   }
+</script>
+</body>
+</html>
